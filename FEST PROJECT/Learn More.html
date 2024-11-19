@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn More About Swayam Fest</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            height: 80px;
+            width: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: black;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .nav-links a:hover {
+            color: #ff6b6b;
+        }
+
+        .content-container {
+            padding: 8rem 2rem 4rem;
+            background-color: #f8f8f8;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .content-container h1 {
+            font-size: 3rem;
+            color: rgb(244, 182, 100);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .intro-section, .highlights-section, .faq-section {
+            margin-bottom: 3rem;
+        }
+
+        .intro-section p, .highlights-section p, .faq-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 1rem;
+        }
+
+        .highlights-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .highlight-item {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .highlight-item h3 {
+            color: #ff6b6b;
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .faq-item h4 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-item p {
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .content-container h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="Logo.png" alt="Swayam Fest">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="video.html">Watch Video</a>
+            <a href="events.html">Events</a>
+            <a href="guidelines.html">Guidelines</a>
+            <a href="register.html">Register</a>
+        </div>
+    </nav>
+
+    <main class="content-container">
+        <h1>Learn More About Swayam Fest</h1>
+
+        <section class="intro-section">
+            <p>Welcome to Swayam Fest 2024! Dive into a world where culture, creativity, and community come together. Swayam is MVJCE Bengaluru’s premier cultural fest, offering students and attendees an unforgettable experience filled with events that showcase talent, celebrate diversity, and foster connections.</p>
+        </section>
+
+        <section class="highlights-section">
+            <h2 style="color: #ff6b6b; margin-bottom: 1rem;">Fest Highlights</h2>
+            <div class="highlights-list">
+                <div class="highlight-item">
+                    <h3>Dance Extravaganza</h3>
+                    <p>Get ready for electrifying performances from dance groups across various genres, blending tradition with contemporary flair.</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>Music Battle</h3>
+                    <p>Feel the rhythm and energy as bands and solo artists compete to bring the best sounds to the stage.</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>Art & Craft Exhibition</h3>
+                    <p>Explore the artistic talent on display, from visual art to creative crafts that reflect unique perspectives.</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>Gaming Challenge</h3>
+                    <p>Join the gaming zone for a thrilling experience where gamers go head-to-head in popular competitive games.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2 style="color: #ff6b6b; margin-bottom: 1rem;">Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h4>Who can participate in Swayam Fest?</h4>
+                <p>All MVJCE students are welcome to participate. Select events may also be open to external participants.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How can I register for an event?</h4>
+                <p>You can register for events on the registration page, accessible from the main navigation bar.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Is there a fee for participation?</h4>
+                <p>Most events are free for MVJCE students. Some specialized workshops may have minimal fees.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Where is the fest held?</h4>
+                <p>Swayam Fest takes place on the MVJCE Bengaluru campus. Venue details for each event will be provided closer to the date.</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

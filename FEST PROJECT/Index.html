@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swayam Fest</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            height: 100px; 
+            width: auto;
+            display: flex;
+            align-items: center;
+        }
+        .logo img{
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: black;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .nav-links a:hover {
+            color: #ff6b6b;  /* Theme color matching the Learn More button */
+        }
+
+        .Register-btn {
+            border: 2px solid rgb(0, 0, 0);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        .Register-btn:hover {
+            background-color: #ff6b6b;
+            color: black !important;  
+            transition: all 0.3s ease
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 100vh;
+        }
+
+        .hero-left {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/api/placeholder/800/600') center/cover;
+            
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+        }
+
+        .hero-left h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero-left p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .play-btn {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: white;
+            text-decoration: none;
+            width: fit-content;
+        }
+
+        .play-circle {
+            width: 50px;
+            height: 50px;
+            border: 2px solid white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .play-btn:hover .play-circle{
+            border-color: #ff6b6b;
+            transform: scale(1.4);
+            transition:all 0.3s ease; 
+        }
+
+        .hero-right {
+            padding: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero-right h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .date-info {
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .description {
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 2rem;
+        }
+
+        .learn-more-btn {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            width: fit-content;
+            text-decoration: none;
+        }
+        .learn-more-btn:hover {
+            animation: bounceButton 0.5s ease;
+            box-shadow: 0 0 20px rgba(255, 107, 107, 0.5);
+            transform: translateY(-2px);
+            background-color: #ff5252;
+        }
+
+
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="Logo.png" alt="Swayam Fest">
+        </div>
+        <div class="nav-links">
+            <a href="Index.html">Home</a>
+            <a href="Events.html">Events</a>
+            <a href="Guidelines.html">Guidelines</a>
+            <a href="Register.html" class="Register-btn">REGISTER!</a>
+        </div>
+    </nav>
+
+    <main class="hero">
+        <section class="hero-left" style="background-image: url(Main-Image.png); background-size: contain; background-repeat: no-repeat;">
+            
+            <h1 style="color:rgb(244, 182, 100)">THE STAGE IS YOURS!</h1>
+            <p>Dive into the heart of MVJCE's cultural vibrancy at Swayam 2024, where your talents illuminate the stage. Celebrate, compete, and connect in our annual fest, showcasing the spirit and creativity of our college community.</p>
+            <a href="video.html" class="play-btn">
+                <div class="play-circle">▶</div>
+                <Font style="font-size: x-large;">Watch Video</Font>
+            </a>
+        </section>
+
+        <section class="hero-right">
+            <h2>Swayam College Fest</h2>
+            <p class="date-info">Check Events page for upcoming programs</p>
+            <p class="description">Embark on a journey of cultural exploration at Swayam 2024, MVJCE Bengaluru's premier cultural fest. Immerse yourself in a diverse array of events that honor tradition while embracing the spirit of innovation. From captivating dance performances to soul-stirring musical showcases, Swayam offers a platform where heritage meets contemporary expression.</p>
+            <a href="Learn More.html" class="learn-more-btn">Learn More</a>
+        </section>
+    </main>
+</body>
+</html>

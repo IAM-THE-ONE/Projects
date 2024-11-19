@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swayam Fest Guidelines</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            height: 80px;
+            width: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: black;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .nav-links a:hover {
+            color: #ff6b6b;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 8rem 4rem 4rem;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: rgb(244, 182, 100);
+        }
+
+        .guidelines-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            width: 80%;
+            max-width: 800px;
+            margin-top: 2rem;
+            text-align: left;
+        }
+
+        .guideline {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .guideline:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .guideline h2 {
+            font-size: 1.5rem;
+            color: #ff6b6b;
+            margin-bottom: 0.5rem;
+        }
+
+        .guideline p {
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .back-btn {
+            margin-top: 2rem;
+            padding: 0.8rem 2rem;
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #ff5252;
+            box-shadow: 0 0 20px rgba(255, 107, 107, 0.5);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .content h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="Logo.png" alt="Swayam Fest">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="video.html">Watch Video</a>
+            <a href="events.html">Events</a>
+            <a href="register.html" class="book-btn">REGISTER!</a>
+        </div>
+    </nav>
+
+    <main class="content">
+        <h1>Participation Guidelines</h1>
+        <div class="guidelines-container">
+            <div class="guideline">
+                <h2>General Conduct</h2>
+                <p>All participants are expected to maintain decorum and follow the college's code of conduct. Respectful behavior towards fellow participants and organizers is mandatory.</p>
+            </div>
+            <div class="guideline">
+                <h2>Registration Requirements</h2>
+                <p>All participants must register through the official registration link. Ensure that you provide accurate information to avoid issues with entry.</p>
+            </div>
+            <div class="guideline">
+                <h2>Time Management</h2>
+                <p>Please arrive at events 15 minutes before the scheduled start time. Late arrivals may not be allowed to participate.</p>
+            </div>
+            <div class="guideline">
+                <h2>Event-Specific Rules</h2>
+                <p>Each event may have unique rules or guidelines. Participants are encouraged to review these details on the Events page and adhere to them strictly.</p>
+            </div>
+            <div class="guideline">
+                <h2>Prohibited Items</h2>
+                <p>Items such as alcohol, drugs, and any other substances that violate college policy are strictly prohibited and will lead to disqualification.</p>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-btn">Back to Home</a>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swayam Fest Registration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            height: 80px;
+            width: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: black;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .nav-links a:hover {
+            color: #ff6b6b;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 8rem 2rem 4rem;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+
+        .form-container h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: rgb(244, 182, 100);
+        }
+
+        form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        label {
+            font-size: 1rem;
+            color: #444;
+        }
+
+        input, select {
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        .submit-btn {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #ff5252;
+            box-shadow: 0 0 20px rgba(255, 107, 107, 0.5);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .form-container h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="Logo.png" alt="Swayam Fest">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="video.html">Watch Video</a>
+            <a href="events.html">Events</a>
+            <a href="guidelines.html">Guidelines</a>
+        </div>
+    </nav>
+
+    <main class="form-container">
+        <h1>Register for Swayam Fest</h1>
+        <form action="/submit-registration" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="event">Select Event</label>
+            <select id="event" name="event" required>
+                <option value="">-- Select an Event --</option>
+                <option value="dance">Dance Competition</option>
+                <option value="singing">Singing Competition</option>
+                <option value="drama">Drama Performance</option>
+                <option value="art">Art Exhibition</option>
+                <option value="gaming">Gaming Challenge</option>
+            </select>
+
+            <button type="submit" class="submit-btn">Submit Registration</button>
+        </form>
+    </main>
+
+</body>
+</html>

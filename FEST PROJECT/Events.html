@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swayam Fest Events</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            height: 80px;
+            width: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: black;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .nav-links a:hover {
+            color: #ff6b6b;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 8rem 4rem 4rem;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: rgb(244, 182, 100);
+        }
+
+        .events-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            width: 80%;
+            max-width: 800px;
+            margin-top: 2rem;
+        }
+
+        .event {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        .event:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .event h2 {
+            font-size: 1.5rem;
+            color: #ff6b6b;
+            margin-bottom: 0.5rem;
+        }
+
+        .event-date {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .event p {
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .back-btn {
+            margin-top: 2rem;
+            padding: 0.8rem 2rem;
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #ff5252;
+            box-shadow: 0 0 20px rgba(255, 107, 107, 0.5);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .content h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="Logo.png" alt="Swayam Fest">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="video.html">Watch Video</a>
+            <a href="guidelines.html">Guidelines</a>
+            <a href="register.html" class="book-btn">REGISTER!</a>
+        </div>
+    </nav>
+
+    <main class="content">
+        <h1>Upcoming Events</h1>
+        <div class="events-container">
+            <div class="event">
+                <h2>Dance Competition</h2>
+                <p class="event-date">Date: March 12, 2024</p>
+                <p>Show off your moves in a high-energy dance competition! All styles welcome – from hip-hop to classical.</p>
+            </div>
+            <div class="event">
+                <h2>Musical Showcase</h2>
+                <p class="event-date">Date: March 14, 2024</p>
+                <p>Join us for an evening filled with live music performances, featuring talented musicians and singers from MVJCE.</p>
+            </div>
+            <div class="event">
+                <h2>Art Exhibition</h2>
+                <p class="event-date">Date: March 16, 2024</p>
+                <p>Discover incredible art pieces by students across various mediums, celebrating creativity and expression.</p>
+            </div>
+            <div class="event">
+                <h2>Theatre Drama</h2>
+                <p class="event-date">Date: March 18, 2024</p>
+                <p>Enjoy captivating dramas performed by our theater group, with stories that will entertain and inspire.</p>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-btn">Back to Home</a>
+    </main>
+
+</body>
+</html>
